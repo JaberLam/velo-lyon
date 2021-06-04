@@ -1,0 +1,155 @@
+body 
+{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+
+/* ------------- HEADER ------------- */
+#header 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;  
+}
+
+#header p 
+{
+  margin-top: 15px;  
+}
+
+/* ------------- MAP ------------- */
+#map
+{
+  width: 100%;
+  margin: 5px;
+  min-width: 320px;
+  height: 700px;  
+}
+
+/* ------------- FOOTER ------------- */
+footer
+{
+  background-color:#26272b;
+  padding:20px 0 20px;  
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #999999;
+}
+
+footer a:hover
+{
+  color: white;
+}
+
+/* -------- GOOGLE MAP ET STATIONS -------- */
+
+.map-info {
+  display: flex;
+  align-items: center;
+}
+
+.map 
+{ 
+  height: 100%;
+  width: 100%;
+}
+
+.informations {
+  height: 300px;
+  width: 20%; 
+  background-color: #e8e8e8;
+}
+
+.titre-informations {
+  margin: 0px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  background-color: #202020;
+}
+
+.contenu-text-informations {
+  padding: 20px;
+}
+
+.text-informations {
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.gm-style .gm-style-iw {
+  font-weight: 800;
+}
+
+
+
+.vert {
+  color: green;
+}
+
+.rouge {
+  color: red;
+}
+
+.orange {
+  color: #ff6c00;
+}
+
+.fa-times-circle {
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.informations-stations {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.informations-stations-span {
+  font-weight: normal;
+}
+
+.reservation {
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  background-color: green;
+  padding: 5px;
+  border-radius: 5px;  
+  cursor: pointer;
+  margin-top: 5px; 
+}
+
+.reservation:hover {
+  background-color: rgba(0, 0, 0, 0.7);    
+}
+
+.reservation-txt {
+  color: #FF3333;
+  font-size: 15px;
+  font-weight: bold;
+}
+

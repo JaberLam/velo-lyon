@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Location de vélo</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./images/icon.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4qPKEOypRckuajCMqYCruQuBz1vWFHog&callback=initMap" async defer></script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    </head>
+    <body>
+
+        <!-- En-tête de page -->
+
+        <header id="header">
+            <img src="images/logo.png">
+            <p>Réservation de vélo en libre service</p>
+        </header>    
+
+        <!-- Google Maps et details de la station -->
+
+        <section id="map-stations" class="map-stations">            
+            <div class="map-info">
+                <div id="map" class="map"></div>
+                <div id="informations" class="informations">
+                    <h3 class="titre-informations">Informations</h3>
+                    <div class="contenu-text-informations">                        
+                        <div class="contenu-info-station hide">
+                            <p id="etat" class="informations-stations">État : <span id="etat-station" class="informations-stations-span"></span></p>                           
+                            <p class="informations-stations place-dispo-station"><span id="texte-place-station"></span><span id="numero-place-station" class="informations-stations-span"></span></p>
+                            <p class="informations-stations info"><span id="texte-velo-station"></span><span id="numero-velo-station" class="informations-stations-span"></span></p>
+                            <p class="reservation-txt"></p>
+                        </div>
+                        <div class="contenu-reservation">
+                            <input class="reservation hide" type="button" value="Réserver un vélo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+       
+
+        <footer>      
+            <a href=""><p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p></a>
+        </footer>        
+        
+        <!-- Script -->        
+        <script src="js/stations.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/map.js"></script>       
+        <script src="js/menu-actif.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
